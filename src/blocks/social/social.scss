@@ -1,0 +1,20 @@
+.social__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.social__item {
+	margin: 0 6px;
+}
+.social__item .icon {
+	width: 36px;
+	height: 36px;
+	fill: $color-grey-3;
+	transition: $animation-speed;
+}
+.social__item .icon:hover {
+	fill: $color-red;
+}

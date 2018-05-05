@@ -1,0 +1,56 @@
+.companies {
+	padding-top: 118px;
+	padding-bottom: 28px;
+
+	@media(min-width: 768px){
+		padding-top: 95px;
+		padding-bottom: 68px;
+	}
+	@media(min-width: 992px){
+		padding-top: 110px;
+	}
+	@media(min-width: 1200px){
+		padding-top: 140px;
+	}
+}
+.companies__title {
+	margin-top: 0;
+	margin-bottom: 27px;
+	opacity: 0.3;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.77;
+  text-align: center;
+  color: $color-black;
+}
+.companies__list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	max-height: 124px;
+	overflow: hidden;
+
+	@media(min-width: 768px){
+		max-height: 50px;
+		margin: 0 auto;
+		max-width: 600px;
+	}
+	@media(min-width: 768px){
+		max-height: 50px;
+		margin: 0 auto;
+		max-width: 880px;
+	}
+}
+.companies__item {
+	padding: 0 25px;
+	margin-bottom: 12px;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
