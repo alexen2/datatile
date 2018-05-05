@@ -1,0 +1,86 @@
+.home-banner {
+	background-image: url(../images/home-banner__bg.svg);
+	padding-top: 47px;
+	text-align: center;
+
+	@media(min-width: 768px){
+		text-align: left;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+.home-banner__in {
+	@media(min-width: 768px){
+		display: flex;
+		flex-direction: row;
+		min-height: 517px;
+	} 
+}
+.home-banner__left {
+	padding-bottom: 32px;
+
+	@media(min-width: 768px){
+		width: 50%;
+		box-sizing: border-box;
+		padding-left: 60px;
+	} 
+	@media(min-width: 992px){
+		padding-left: 80px;
+		padding-right: 20px;
+	}
+	@media(min-width: 1200px){
+		width: 40%;
+		padding-left: 46px;
+		padding-right: 40px;
+	}
+}
+.home-banner .title-h1 {
+	color: $color-white;
+	max-width: 285px;
+
+	@media(min-width: 768px){
+		margin-top: 50px;
+	} 
+	@media(min-width: 992px){
+		max-width: 350px;
+		margin-top: 57px;
+	}
+}
+.home-banner__left p {
+	color: $color-white;
+	opacity: 0.7;
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0 0 25px 0;
+
+  @media(min-width: 768px){
+  	font-size: 19px;	
+  	margin: 0 0 35px 0;
+	} 
+	@media(min-width: 992px){	
+  	margin: 0 0 50px 0;
+	} 
+}
+.home-banner__right {
+	position: relative;
+
+	@media(min-width: 768px){
+		width: 50%;
+	}
+	@media(min-width: 1200px){
+		width: 60%;
+	}
+}
+.home-banner__macbook {
+	position: relative;
+	display: block;
+	width: 100%;
+	bottom: -22px;
+
+	@media(min-width: 768px){
+		position: absolute;
+		width: 890px;
+		top: 0;
+		left: 0;
+	}
+}

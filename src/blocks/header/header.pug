@@ -1,0 +1,14 @@
+header.header
+	div.container
+		div.header__in
+			include ../hamburger/hamburger.pug
+			+hamburger()(id="hamburger")
+
+			include ../logo/logo.pug
+
+			div.header__menu
+				include ../menu/menu.pug
+
+			div.header__right
+				include ../btn/btn.pug
+				+btn({text: 'Log In'})(class="btn--xs btn--outline")

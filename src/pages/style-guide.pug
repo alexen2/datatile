@@ -1,0 +1,82 @@
+doctype html
+html(lang="ru")
+	include include/head.pug
+	+head('Style Guide')
+
+	body
+		div.container
+			br
+			br
+			h1(style="font-weight: normal; font-size: 46px;") Style Guide
+			br
+			br
+			h2 Logo
+			hr
+			br
+			a.logo(href="/")
+				svg.icon.icon__logo(title="datatile")
+					use(xlink:href="#icon__logo")
+			br
+			a.logo--gray(href="/")
+				svg.icon.icon__logo--gray(title="datatile")
+					use(xlink:href="#icon__logo--gray")
+			br
+			br
+			h2 Menu
+			hr
+			br
+			include ../blocks/menu/menu.pug
+			br
+			br
+			h2 Buttons
+			hr
+			br
+			include ../blocks/btn/btn.pug
+			+btn({text: 'Request live demo'})
+			br
+			br
+			+btn({text: 'Request live demo'})(class="btn--xs")
+			br
+			br
+			br
+			+btn({text: 'Request live demo'})(class="btn--yellow")
+			br
+			br
+			+btn({text: 'Request live demo'})(class="btn--xs btn--yellow")
+			br
+			br
+			br
+			+btn({text: 'Log In'})(class="btn--outline")
+			br
+			br
+			+btn({text: 'Log In'})(class="btn--xs btn--outline")
+			br
+			br
+			+btn({text: 'Log In'})(class="btn--outline-yellow")
+			br
+			br
+			+btn({text: 'Log In'})(class="btn--xs btn--outline-yellow")
+			br
+			br
+			h2 Feature
+			hr
+			br
+			include ../blocks/feature/feature.pug
+			+feature({icon: 'icon__big-1', title: 'Intuitive, visual and perfomant analysis', text: '<p>DATATILE is the single-source analytical online storage for all your deliveries.</p> <p>For research consumers DATATILE becomes a compelling self-service analytical portal and knowledge base.</p>'})
+			br
+			br
+			include ../blocks/feature/feature.pug
+			+feature({icon: 'icon__big-5', title: 'Custom solutions', text: '<p>Security of users\' data is our priority. You can manage access granularly on the level of groups of entities, databases,  dashboards, particular variables and chunks of data. Role-based functionality defines what features of the </p>'})(class="feature--full-width")
+			br
+			br
+			h2 Testimonial
+			hr
+			br
+			include ../blocks/testimonial/testimonial.pug
+			+testimonial({text: 'The team was responsive, helpful, and pleasant to work with. I would use them again for a future need.', img: 'testimonial__1', name: 'Matthias Tobies', user_desc: 'Senior Research Executive at Ipsos Germany'})
+				
+
+		div(style="height: 100px;")
+			
+		include include/svg.html
+		include include/script.pug

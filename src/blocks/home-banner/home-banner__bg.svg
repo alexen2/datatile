@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #15A4D0;">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>blueBg</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="blueBg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.149999991">
+        <polyline id="Path-4" stroke="#FFFFFF" points="0 60 15 45 35 45 60 30"></polyline>
+        <polyline id="Path-4-Copy" stroke="#FFFFFF" points="0 30 25 15 45 15 60 0"></polyline>
+    </g>
+</svg>

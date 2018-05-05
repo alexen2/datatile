@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "browser-sync": "latest",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-concat": "latest",
+    "gulp-flatten": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-pug": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "run-sequence": "latest",
+    "gulp-autoprefixer": "latest"
+  }
+}

@@ -1,0 +1,41 @@
+.home-text__in {
+	text-align: center;	
+	margin: auto;
+}
+.home-text__title {
+	margin: 76px auto 36px auto;
+	font-size: 21px;
+  font-weight: bold;
+  line-height: 1.42;
+  color: $color-red;
+  max-width: 580px;
+
+  @media(min-width: 768px){
+		margin: 70px auto 30px auto;
+  }
+  @media(min-width: 992px){
+  	margin: 55px auto 35px auto;
+		font-size: 29px;
+		line-height: 1.21;
+		max-width: 720px;
+  }
+  @media(min-width: 1200px){
+  	max-width: 950px;
+  	margin: 55px auto 40px auto;
+  }
+}
+.home-text__text {
+	font-size: 17px;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 580px;
+
+  @media(min-width: 992px){
+		font-size: 19px;
+		line-height: 1.53;
+		max-width: 780px;
+  }
+  @media(min-width: 1200px){
+  	max-width: 756px;
+  }
+}

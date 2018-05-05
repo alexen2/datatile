@@ -1,0 +1,41 @@
+.testimonial {
+	position: relative;
+	padding: 0 0 0 40px;
+}
+.testimonial__icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.testimonial__icon .icon__quotes {
+	fill: $color-red;
+	width: 21.1px;
+	height: 18.5px;
+}
+.testimonial__text {
+	opacity: 0.8;
+  font-size: 17px;
+  line-height: 1.53;
+  color: $color-black;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+.testimonial__user {
+	display: flex;
+	flex-direction: row;
+	font-size: 13px;
+  line-height: 1.15;
+  color: $color-black;
+}
+.testimonial__img {
+	padding-right: 14px;
+}
+.testimonial__user-info h3 {
+	font-size: 13px;
+  line-height: 1.15;
+  margin-top: 4px;
+  margin-bottom: 7px;
+}
+.testimonial__user-info p {
+	margin: 0;
+}

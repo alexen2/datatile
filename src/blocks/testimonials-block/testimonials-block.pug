@@ -1,0 +1,18 @@
+section.testimonials-block
+	div.container
+		div.testimonials-block__header
+			h2 Officially amazed clients
+
+		div.testimonials-block__body
+			ul.testimonials-block__list.swiper-wrapper
+				li.testimonials-block__item.swiper-slide
+					include ../testimonial/testimonial.pug
+					+testimonial({text: 'The team was responsive, helpful, and pleasant to work with. I would use them again for a future need.', img: 'testimonial__1', name: 'Matthias Tobies', user_desc: 'Senior Research Executive at Ipsos Germany'})
+
+				li.testimonials-block__item.swiper-slide
+					+testimonial({text: 'The team was responsive, helpful, and pleasant to work with. I would use them again for a future need.', img: 'testimonial__1', name: 'Matthias Tobies', user_desc: 'Senior Research Executive at Ipsos Germany'})
+
+				li.testimonials-block__item.swiper-slide
+					+testimonial({text: 'The team was responsive, helpful, and pleasant to work with. I would use them again for a future need.', img: 'testimonial__1', name: 'Matthias Tobies', user_desc: 'Senior Research Executive at Ipsos Germany'})
+
+			div.testimonials-block__pag

@@ -1,0 +1,10 @@
+mixin feature(data)
+	div.feature(class!=attributes.class)
+		div.feature__img
+			svg.icon(class=data.icon, title=data.title)
+				use(xlink:href="#"+data.icon)
+
+		div.feature__text
+			h3!=data.title
+
+			!=data.text

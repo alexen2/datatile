@@ -1,0 +1,18 @@
+.btn--outline-yellow {
+	background: none;
+	border: 1px solid $color-yellow; 
+	transition: $animation-speed;
+}
+.btn--outline-yellow .btn__text {
+	color: $color-yellow;	
+	transition: $animation-speed;
+}
+.btn--outline-yellow:hover {
+	background-color: $color-yellow;
+}
+.btn--outline-yellow:hover .btn__text {
+	color: $color-white;
+}
+.btn--outline-yellow:hover::before {
+	content: none;
+}

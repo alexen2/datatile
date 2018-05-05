@@ -1,0 +1,16 @@
+mixin testimonial(data)
+	div.testimonial(class!=attributes.class)
+		span.testimonial__icon
+			svg.icon.icon__quotes(title="quotes")
+				use(xlink:href="#icon__quotes")
+
+		p.testimonial__text!=data.text
+
+		div.testimonial__user
+			div.testimonial__img
+				img(src="images/"+data.img+".jpg", srcset="img/"+data.img+"@2x.jpg 2x", alt=data.name)
+
+			div.testimonial__user-info
+				h3!=data.name
+
+				p!=data.user_desc

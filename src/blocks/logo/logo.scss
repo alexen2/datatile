@@ -1,0 +1,23 @@
+.logo {
+	display: block;
+	width: 109px;
+	height: 12px;
+	line-height: 12px;
+
+	@media(min-width: 992px){
+		width: 181px;
+		height: 20px;
+	}
+}
+.logo .icon__logo {
+	width: 109px;
+	height: 12px;
+	fill: $color-red-2;
+
+	@media(min-width: 992px){
+		width: 181px;
+		height: 20px;
+	}
+}
+
+@import '--gray/--gray';

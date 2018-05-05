@@ -1,0 +1,15 @@
+div.features-block
+	div.container
+		ul.features-block__list
+			li.features-block__item
+				include ../feature/feature.pug
+				+feature({icon: 'icon__big-1', title: 'Distributed data warehouse', text: '<p>DATATILE is the single-source analytical online storage for all your deliveries.</p> <p>For research consumers DATATILE becomes a compelling self-service analytical portal and knowledge base.</p>'})
+
+			li.features-block__item
+				+feature({icon: 'icon__big-2', title: 'From data processing to data management', text: '<p>DATATILE comes with fully fledged data processing functionality which will make your daily work much easier and less time-consuming.</p> <p>Management of multiple responses, coding of open-ended questions, bulk operations, etc</p>'})
+
+			li.features-block__item
+				+feature({icon: 'icon__big-3', title: 'Intuitive, visual and perfomant analysis', text: '<p>More than 20 statistical metrics, arithmetical calculations, aggregations, significance tests allow to run in-depth analysis of your data.</p> <p>Instant representations on tens of chart types with indicators, conversion, etc.</p>'})
+
+			li.features-block__item
+				+feature({icon: 'icon__big-4', title: 'Deliver through collaboration', text: '<p>Streamlineed delivery of results.</p> <p>Raw data to interactive dashboards in few clicks.</p> <p>Share entities, automate PowerPoint reports.</p> <p>Engage customers in self-service analysis.</p>'})

@@ -1,0 +1,15 @@
+.logo--gray {
+	display: block;
+	width: 130px;
+	height: 14px;
+	line-height: 14px;
+}
+.logo--gray .icon__logo--gray {
+	width: 130px;
+	height: 14px;
+	fill: $color-grey-2;
+	transition: $animation-speed;
+}
+.logo--gray .icon__logo--gray:hover {
+	fill: $color-red;
+}

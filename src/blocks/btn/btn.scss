@@ -1,0 +1,56 @@
+.btn {
+	padding: 0;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	display: inline-block;
+	color: $color-white;
+	background-color: $color-red;
+	box-sizing: border-box;
+	text-decoration: none;
+	position: relative;	
+}
+.btn:hover {
+	cursor: pointer;
+	color: $color-white;
+}
+.btn::before {
+	position: absolute;
+	top: 0;
+	left: 50%;	
+	bottom: 0;
+	width: 0;
+	display: block;
+	content: " ";
+	background-color: rgba(255, 255, 255, 0.2);
+	transition: $animation-speed__faster;
+}
+.btn:hover::before {	
+	width: 100%;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.btn__text {
+	font-size: 21px;
+  font-weight: bold;
+  letter-spacing: -0.9px;
+  color: #ffffff;  
+	margin: 0 43px;
+	line-height: 58px;
+}
+.icon+.btn__text {
+  margin-left: -14px;
+}
+.btn__text:not(:last-child) {
+	margin-right: -14px;
+}
+.btn .icon {
+	margin: 0 28px;
+}
+.btn .icon:only-of-type {
+	margin: 0;
+}
+
+@import '--xs/--xs';
+@import '--outline/--outline';
+@import '--outline-yellow/--outline-yellow';
+@import '--yellow/--yellow';

@@ -1,0 +1,27 @@
+.menu__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.menu__item {
+	display: inline-block;
+	margin-right: 27px;
+	padding-top: 6px;
+	line-height: 70px;
+}
+.menu__item--active {
+	border-bottom: 4px solid $color-yellow;
+}
+.menu__link {
+	display: block;
+	line-height: 70px;
+	color: $color-text;
+	font-size: 14px;
+	text-decoration: none;
+}
+.menu__link:hover {
+	color: $color-black;
+}
+.menu__item--active .menu__link {
+	color: $color-black;	
+}

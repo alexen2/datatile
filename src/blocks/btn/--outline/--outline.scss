@@ -1,0 +1,18 @@
+.btn--outline {
+	background: none;
+	border: 1px solid $color-red; 
+	transition: $animation-speed;
+}
+.btn--outline .btn__text {
+	color: $color-red;	
+	transition: $animation-speed;
+}
+.btn--outline:hover {
+	background-color: $color-red;
+}
+.btn--outline:hover .btn__text {
+	color: $color-white;
+}
+.btn--outline:hover::before {
+	content: none;
+}
