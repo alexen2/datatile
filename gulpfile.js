@@ -39,7 +39,8 @@ gulp.task('sass', function(){
 	    .pipe(autoprefixer({
 	        browsers: ['last 2 versions'],
 	        cascade: false
-	    }))
+	    }))	       
+			.pipe(sass({outputStyle: 'compressed'}))
 	    .pipe(gulp.dest(params.css))
 });
 
@@ -50,7 +51,7 @@ gulp.task('resources-js', function(){
 
 gulp.task('resources-css', function(){
 	return gulp.src('src/resources/**/*.css')
-		.pipe(gulp.dest(params.out))
+		.pipe(gulp.dest(params.out))		
 });
 
 gulp.task('resources-fonts', function(){
