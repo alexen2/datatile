@@ -1,7 +1,7 @@
 mixin feature(data)
 	div.feature(class!=attributes.class)
 		div.feature__img
-			svg.icon(class=data.icon, title=data.title)
+			svg.icon(class=data.icon)
 				use(xlink:href="#"+data.icon)
 
 		div.feature__text
