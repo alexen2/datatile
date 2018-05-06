@@ -39,7 +39,8 @@ body {
   line-height: 26px;
   color: #5d5d5d;
   position: relative;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  margin: 0; }
 
 .container {
   -webkit-box-sizing: border-box;
