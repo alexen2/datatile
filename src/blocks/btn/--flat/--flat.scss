@@ -1,0 +1,13 @@
+.btn--flat {
+	background: none;
+	border: 1px solid transition; 
+	transition: $animation-speed;
+	color: $color-red;	
+}
+.btn--flat .btn__text {
+	color: $color-red;	
+	font-weight: normal;
+}
+.btn--flat:hover {
+	border: 1px solid $color-red;
+}

@@ -80,7 +80,25 @@ html(lang="ru")
 			hr
 			br
 			include ../blocks/social/social.pug
-				
+			br
+			br
+			h2 Form elements
+			hr
+			br
+			include ../blocks/input-anim/input-anim.pug
+			div
+				+input-anim({title: 'Your full name', name: 'name', type: 'text', required: true})
+			br
+			div
+				+input-anim({title: 'Your email address', name: 'name', type: 'text', required: true})(class="input-anim--error")
+			br
+			div
+				include ../blocks/textarea-anim/textarea-anim.pug
+				+textarea-anim({title: 'Comments', name: 'omments', required: true})(class="textarea-anim--adaptive-height")
+			br
+			div
+				include ../blocks/textarea-anim/textarea-anim.pug
+				+textarea-anim({title: 'Comments', name: 'comments', required: true})(class="textarea-anim--adaptive-height textarea-anim--error")
 
 		div(style="height: 100px;")
 			

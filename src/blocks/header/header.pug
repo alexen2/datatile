@@ -6,9 +6,9 @@ header.header
 
 			include ../logo/logo.pug
 
-			div.header__menu
+			//div.header__menu
 				include ../menu/menu.pug
 
 			div.header__right
 				include ../btn/btn.pug
-				+btn({text: 'Log In'})(class="btn--xs btn--outline")
+				+btn({text: 'Support portal', type: 'link', url: 'http://support.datatile.eu'})(class="btn--xs btn--flat")

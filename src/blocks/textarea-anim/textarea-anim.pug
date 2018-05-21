@@ -1,0 +1,5 @@
+mixin textarea-anim(data)
+	fieldset.textarea-anim(class!=attributes.class)
+		textarea(id=data.name, name=data.name, required=data.required)
+		label(for!= data.name)!=data.title
+		span.textarea-anim__error-msg Please fill in this field

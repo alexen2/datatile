@@ -1,0 +1,5 @@
+mixin input-anim(data)
+	fieldset.input-anim(class!=attributes.class)
+		input(id=data.name, name=data.name, type=data.type, value='', required=data.required)
+		label(for!= data.name)!=data.title
+		span.input-anim__error-msg Please fill in this field

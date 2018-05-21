@@ -1,0 +1,16 @@
+mixin modal(data)
+	div.modal(class!=attributes.class, id!=attributes.id)
+		div.modal__mobile
+			a.modal__close(id="test5")
+				svg.icon.icon__arrow
+					use(xlink:href="#icon__arrow")
+
+				svg.icon.icon__logo
+					use(xlink:href="#icon__logo")
+
+		if data.title
+			h3.modal__title=data.title
+
+		case data.block
+			when 'form-request-demo'
+				include ../form-request-demo/form-request-demo.pug

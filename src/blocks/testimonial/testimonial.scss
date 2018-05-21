@@ -1,6 +1,8 @@
 .testimonial {
 	position: relative;
 	padding: 0 0 0 40px;
+	overflow: hidden;
+	width: 100%;
 }
 .testimonial__icon {
 	position: absolute;
@@ -29,6 +31,9 @@
 }
 .testimonial__img {
 	padding-right: 14px;
+}
+.testimonial__img img {
+	border-radius: 50%;
 }
 .testimonial__user-info h3 {
 	font-size: 13px;

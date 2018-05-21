@@ -1,0 +1,22 @@
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.modal-overlay--show {
+  display: block;
+  animation: background 0.5s;
+}
+@keyframes background {
+  0% {
+    background: transparent; 
+  }
+  100% { 
+    background: rgba(0, 0, 0, 0.5); 
+  }
+}

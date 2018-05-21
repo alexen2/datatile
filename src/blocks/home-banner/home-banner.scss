@@ -2,6 +2,7 @@
 	background-image: url(../images/home-banner__bg.svg);
 	padding-top: 47px;
 	text-align: center;
+	overflow: hidden;
 
 	@media(min-width: 768px){
 		text-align: left;

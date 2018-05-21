@@ -1,0 +1,35 @@
+div.form-request-demo(id="form-request-demo")
+	form.form-request-demo__form(action="/", method="post", novalidate)
+		div.form-request-demo__row
+			div.form-request-demo__col-6
+				include ../input-anim/input-anim.pug
+				+input-anim({title: 'Your full name', name: 'name', type: 'text', required: true})
+
+			div.form-request-demo__col-6
+				include ../input-anim/input-anim.pug
+				+input-anim({title: 'Your position', name: 'position', type: 'text', required: true})
+
+		div.form-request-demo__row
+			div.form-request-demo__col-12
+				include ../input-anim/input-anim.pug
+				+input-anim({title: 'Company', name: 'company', type: 'text', required: true})
+
+		div.form-request-demo__row
+			div.form-request-demo__col-6
+				include ../input-anim/input-anim.pug
+				+input-anim({title: 'Your email address', name: 'email', type: 'text', required: true})
+
+			div.form-request-demo__col-6
+				include ../input-anim/input-anim.pug
+				+input-anim({title: 'Your phone number', name: 'phone', type: 'text', required: true})
+
+		div.form-request-demo__row
+			div.form-request-demo__col-12
+				include ../textarea-anim/textarea-anim.pug
+				+textarea-anim({title: 'Comments', name: 'comments', required: true})(class="textarea-anim--adaptive-height")
+
+		div.form-request-demo__row
+			div.form-request-demo__col-12.text-right
+				include ../btn/btn.pug
+				+btn({text: 'Cancel', type: 'submit'})(class="form-request-demo__cancel")
+				+btn({text: 'Request', type: 'submit'})

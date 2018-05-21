@@ -1,0 +1,74 @@
+.input-anim {
+	margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+  background-color: $color-white;
+}
+.input-anim input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 0 5px 0;
+  border: 0;
+  border-bottom: 1px solid #d8d8d8;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  background: none;
+  color: $color-black;
+  outline: 0;
+  appearance: none;
+  transition: all 0.2s ease-in-out;
+  z-index: 10;
+  position: relative;
+
+  &[data-empty="false"],
+  &:valid,
+  &:focus {
+    border-bottom: 2px solid $color-blue;
+  }
+  &:focus {
+    outline: 0;
+  }
+  &[data-empty="false"] + label,
+  &:valid + label,
+  &:focus + label {
+    font-weight: normal;
+    font-size: 12px;
+    transform: translate3d(0, -19px, 0);
+  }
+}
+.input-anim label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color-grey-4;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+
+.input-anim--error input {
+  border-bottom: 2px solid $color-red;
+
+  &[data-empty="false"],
+  &:valid,
+  &:focus {
+    border-bottom: 2px solid $color-red;
+  }
+}
+.input-anim__error-msg {
+  display: none;
+}
+.input-anim--error .input-anim__error-msg {
+  display: block;
+  font-size: 12px;
+  color: $color-red-3;
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+}

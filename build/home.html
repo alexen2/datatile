@@ -17,20 +17,11 @@
             <svg class="icon icon__logo">
               <use xlink:href="#icon__logo"></use>
             </svg></a>
-          <div class="header__menu">
-            <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__item menu__item--active"><a class="menu__link" href="#">Home</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">How it works</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Support</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header__right">
-                        <button class="btn btn--xs btn--outline" type="button"><span class="btn__text">Log In</span>
-                        </button>
+          <!--div.header__menu
+          include ../menu/menu.pug
+          
+          -->
+          <div class="header__right"><a class="btn btn--xs btn--flat" href="http://support.datatile.eu" role="button"><span class="btn__text">Support portal</span></a>
           </div>
         </div>
       </div>
@@ -41,7 +32,7 @@
           <div class="home-banner__left">
             <h1 class="title-h1">Better decisions with engaging research delivery</h1>
             <p>Small ad-hoc, syndicated studies or global brand trackers with millions of interviews are delivered in a streamlined and nice collaborative way with DATATILE.</p>
-                        <button class="btn btn--yellow" type="button"><span class="btn__text">Request live demo</span>
+                        <button class="btn btn--yellow modal-btn" type="button" data-target="form-request-demo"><span class="btn__text">Request live demo</span>
                         </button>
           </div>
           <div class="home-banner__right"><img class="home-banner__macbook" src="images/home-banner__macbook.png" srcset="images/home-banner__macbook@2x.png 2x" alt="macbook"></div>
@@ -156,7 +147,7 @@
                                 </svg></span>
                               <p class="testimonial__text">The team was responsive, helpful, and pleasant to work with. I would use them again for a future need.</p>
                               <div class="testimonial__user">
-                                <div class="testimonial__img"><img src="images/testimonial__1.jpg" srcset="images/testimonial__1@2x.jpg 2x" alt="Matthias Tobies"></div>
+                                <div class="testimonial__img"><img src="images/testimonial__matthias-tobies.jpg" srcset="images/testimonial__matthias-tobies@2x.jpg 2x" alt="Matthias Tobies"></div>
                                 <div class="testimonial__user-info">
                                   <h3>Matthias Tobies</h3>
                                   <p>Senior Research Executive at Ipsos Germany</p>
@@ -171,7 +162,7 @@
                                 </svg></span>
                               <p class="testimonial__text">They have done a great job in helping to build a custom portal for us, with great functionality for a media optimizer. </p>
                               <div class="testimonial__user">
-                                <div class="testimonial__img"><img src="images/testimonial__2.jpg" srcset="images/testimonial__2@2x.jpg 2x" alt="John Hallward"></div>
+                                <div class="testimonial__img"><img src="images/testimonial__john-hallward.jpg" srcset="images/testimonial__john-hallward@2x.jpg 2x" alt="John Hallward"></div>
                                 <div class="testimonial__user-info">
                                   <h3>John Hallward</h3>
                                   <p>Director of Global Product Development at Ipsos Connect</p>
@@ -186,9 +177,9 @@
                                 </svg></span>
                               <p class="testimonial__text">I used this great interactive presentation portal made by DATATILE team to demonstrate the migration…</p>
                               <div class="testimonial__user">
-                                <div class="testimonial__img"><img src="images/testimonial__3.jpg" srcset="images/testimonial__3@2x.jpg 2x" alt="Matthias Tobies"></div>
+                                <div class="testimonial__img"><img src="images/testimonial__neli-esipova.jpg" srcset="images/testimonial__neli-esipova@2x.jpg 2x" alt="Neli Esipova"></div>
                                 <div class="testimonial__user-info">
-                                  <h3>Matthias Tobies</h3>
+                                  <h3>Neli Esipova</h3>
                                   <p>Senior Research Executive at Ipsos Germany</p>
                                 </div>
                               </div>
@@ -204,7 +195,7 @@
         <h2>Take control of your research life</h2>
         <p>Small ad-hoc, syndicated studies or global brand trackers with millions of interviews are delivered in a streamlined and nice collaborative way with DATATILE.</p>
         <div class="take-control__bottom">
-                    <button class="btn" type="button"><span class="btn__text">Request live demo</span>
+                    <button class="btn modal-btn" type="button" data-target="test"><span class="btn__text">Request live demo</span>
                     </button>
         </div>
       </section>
@@ -214,12 +205,11 @@
         <section class="companies">
           <h4 class="companies__title">You’ll be in good company</h4>
           <ul class="companies__list">
-            <li class="companies__item"><img src="images/companies__1.png" alt=""></li>
-            <li class="companies__item"><img src="images/companies__2.png" alt=""></li>
-            <li class="companies__item"><img src="images/companies__3.png" alt=""></li>
-            <li class="companies__item"><img src="images/companies__1.png" alt=""></li>
-            <li class="companies__item"><img src="images/companies__2.png" alt=""></li>
-            <li class="companies__item"><img src="images/companies__3.png" alt=""></li>
+            <li class="companies__item"><img src="images/companies__ipsos.svg" alt="Ipsos"></li>
+            <li class="companies__item"><img src="images/companies__omd.svg" alt="OMD"></li>
+            <li class="companies__item"><img src="images/companies__tiburon.png" srcset="images/companies__tiburon@2x.png 2x" alt="Tiburon"></li>
+            <li class="companies__item"><img src="images/companies__fastuna.svg" alt="Fastuna"></li>
+            <li class="companies__item"><img src="images/companies__sinomonitor.png" srcset="images/companies__sinomonitor@2x.png 2x" alt="Sinomonitor"></li>
           </ul>
         </section>
       </div>
@@ -264,6 +254,83 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div class="modal-overlay"></div>
+        <div class="modal" id="form-request-demo">
+          <div class="modal__mobile"><a class="modal__close" id="test5">
+              <svg class="icon icon__arrow">
+                <use xlink:href="#icon__arrow"></use>
+              </svg>
+              <svg class="icon icon__logo">
+                <use xlink:href="#icon__logo"></use>
+              </svg></a></div>
+          <h3 class="modal__title">Request live demo</h3>
+          <div class="form-request-demo" id="form-request-demo">
+            <form class="form-request-demo__form" action="/" method="post" novalidate>
+              <div class="form-request-demo__row">
+                <div class="form-request-demo__col-6">
+                                <fieldset class="input-anim">
+                                  <input id="name" name="name" type="text" value="" required>
+                                  <label for="name">Your full name</label><span class="input-anim__error-msg">Please fill in this field</span>
+                                </fieldset>
+                </div>
+                <div class="form-request-demo__col-6">
+                                <fieldset class="input-anim">
+                                  <input id="position" name="position" type="text" value="" required>
+                                  <label for="position">Your position</label><span class="input-anim__error-msg">Please fill in this field</span>
+                                </fieldset>
+                </div>
+              </div>
+              <div class="form-request-demo__row">
+                <div class="form-request-demo__col-12">
+                                <fieldset class="input-anim">
+                                  <input id="company" name="company" type="text" value="" required>
+                                  <label for="company">Company</label><span class="input-anim__error-msg">Please fill in this field</span>
+                                </fieldset>
+                </div>
+              </div>
+              <div class="form-request-demo__row">
+                <div class="form-request-demo__col-6">
+                                <fieldset class="input-anim">
+                                  <input id="email" name="email" type="text" value="" required>
+                                  <label for="email">Your email address</label><span class="input-anim__error-msg">Please fill in this field</span>
+                                </fieldset>
+                </div>
+                <div class="form-request-demo__col-6">
+                                <fieldset class="input-anim">
+                                  <input id="phone" name="phone" type="text" value="" required>
+                                  <label for="phone">Your phone number</label><span class="input-anim__error-msg">Please fill in this field</span>
+                                </fieldset>
+                </div>
+              </div>
+              <div class="form-request-demo__row">
+                <div class="form-request-demo__col-12">
+                                <fieldset class="textarea-anim textarea-anim--adaptive-height">
+                                  <textarea id="comments" name="comments" required></textarea>
+                                  <label for="comments">Comments</label><span class="textarea-anim__error-msg">Please fill in this field</span>
+                                </fieldset>
+                </div>
+              </div>
+              <div class="form-request-demo__row">
+                <div class="form-request-demo__col-12 text-right">
+                                <button class="btn form-request-demo__cancel" type="submit"><span class="btn__text">Cancel</span>
+                                </button>
+                                <button class="btn" type="submit"><span class="btn__text">Request</span>
+                                </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+    <div class="modal" id="test">
+      <div class="modal__mobile"><a class="modal__close">
+          <svg class="icon icon__arrow">
+            <use xlink:href="#icon__arrow"></use>
+          </svg>
+          <svg class="icon icon__logo">
+            <use xlink:href="#icon__logo"></use>
+          </svg></a></div>
+      <h3 class="modal__title">test</h3>
     </div><svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none">
 	<symbol id="icon__logo" viewBox="0 0 181 20">
 		<g fill-rule="nonzero">
@@ -376,6 +443,11 @@
       <path fill="#FFB333" d="M124 130c-.602 0-1.203-.23-1.662-.688l-6.65-6.65a2.351 2.351 0 0 1 0-3.325l6.65-6.649a2.351 2.351 0 0 1 3.324 0l6.65 6.65a2.35 2.35 0 0 1 0 3.324l-6.65 6.65A2.343 2.343 0 0 1 124 130zm-3.325-9l3.325 3.324 3.325-3.324-3.325-3.325-3.325 3.325z"/>
     </g>
 	</symbol>
+
+  <symbol id="icon__arrow" viewBox="0 0 24 24">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+  </symbol>
 </svg>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/swiper.min.js"></script>
