@@ -80,6 +80,18 @@ $(document).ready(function() {
 		}
 	});	
 });
+$(document).ready(function() {
+	var swiper = new Swiper('.home-banner__right', {
+    centeredSlides: true,
+    spaceBetween: 800,
+     speed: 800,
+    effect: 'fade',
+    autoplay: {
+      delay: 10000,
+      disableOnInteraction: false,
+    },
+  });
+});
 var modalBtn = document.querySelectorAll('.modal-btn');
 var overlay = document.querySelector(".modal-overlay");
 var modalClose = document.querySelectorAll(".modal__close");
