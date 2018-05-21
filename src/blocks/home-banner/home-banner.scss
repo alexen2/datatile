@@ -1,13 +1,13 @@
 .home-banner {
 	background-image: url(../images/home-banner__bg.svg);
 	padding-top: 47px;
-	text-align: center;
-	overflow: hidden;
+	text-align: center;	
 
 	@media(min-width: 768px){
 		text-align: left;
 		padding-top: 50px;
 		padding-bottom: 50px;
+		overflow: hidden;
 	}
 }
 .home-banner__in {
@@ -72,16 +72,26 @@
 		width: 60%;
 	}
 }
-.home-banner__macbook {
+.home-banner__img {
 	position: relative;
-	display: block;
 	width: 100%;
-	bottom: -22px;
+	bottom: -22px;	
 
 	@media(min-width: 768px){
 		position: absolute;
-		width: 890px;
+		width: 1014px;
 		top: 0;
 		left: 0;
+	}
+}
+
+.home-banner__img img {
+	display: block;
+	width: 100%;
+
+	@media(min-width: 768px){
+		width: 1014px;
+		position: absolute;
+    left: 0;
 	}
 }
