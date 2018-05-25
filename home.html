@@ -13,7 +13,7 @@
     <header class="header">
       <div class="container">
         <div class="header__in">
-                    <button class="hamburger hamburger--spin" type="button" id="hamburger"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button><a class="logo" href="/">
+          <!--+hamburger()(id="hamburger")--><a class="logo" href="/">
             <svg class="icon icon__logo">
               <use xlink:href="#icon__logo"></use>
             </svg></a>
@@ -21,7 +21,13 @@
           include ../menu/menu.pug
           
           -->
-          <div class="header__right"><a class="btn btn--xs btn--flat" href="http://support.datatile.eu" role="button"><span class="btn__text">Support portal</span></a>
+          <div class="header__right">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item hide-468"><a class="menu__link" href="https://cloud.datatile.eu">Datatile in Cloud</a></li>
+                <li class="menu__item"><a class="menu__link" href="http://support.datatile.eu">Support portal</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
@@ -41,6 +47,7 @@
               <div class="home-banner__img swiper-slide"><img src="images/home-banner__dashboard.jpg" srcset="images/home-banner__dashboard@2x.jpg 2x" alt="crosstab"></div>
               <div class="home-banner__img swiper-slide"><img src="images/home-banner__myspace.jpg" srcset="images/home-banner__myspace@2x.jpg 2x" alt="crosstab"></div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -319,7 +326,7 @@
               </div>
               <div class="form-request-demo__row">
                 <div class="form-request-demo__col-12 text-right">
-                                <button class="btn form-request-demo__cancel" type="submit"><span class="btn__text">Cancel</span>
+                                <button class="btn form-request-demo__cancel modal__close" type="button"><span class="btn__text">Cancel</span>
                                 </button>
                                 <button class="btn" type="submit"><span class="btn__text">Request</span>
                                 </button>
