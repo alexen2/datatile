@@ -88,10 +88,26 @@
 .home-banner__img img {
 	display: block;
 	width: 100%;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 
 	@media(min-width: 768px){
 		width: 1014px;
 		position: absolute;
     left: 0;
 	}
+}
+.home-banner .swiper-container-horizontal>.swiper-pagination-bullets, 
+.home-banner .swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom: -60px;
+
+	@media(min-width: 768px) {
+		bottom: -40px;
+	}
+}
+.home-banner .swiper-pagination-bullet {
+	opacity: 0.35;
+}
+.home-banner .swiper-pagination-bullet-active {
+	background: $color-yellow;
+	opacity: 1;
 }

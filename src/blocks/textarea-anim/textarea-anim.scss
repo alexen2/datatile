@@ -25,6 +25,7 @@
   z-index: 10;
   position: relative;
   overflow: hidden;
+  resize: none;
 
   &[data-empty="false"],
   &:valid,

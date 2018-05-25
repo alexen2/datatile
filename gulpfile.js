@@ -3,6 +3,7 @@ var gulp = require('gulp'),
 	rename = require('gulp-rename'),
 	pug = require('gulp-pug'),
 	sass = require('gulp-sass'),
+	uglify = require('gulp-uglify'),
 	imagemin = require('gulp-imagemin'),
 	del = require('del'),
 	flatten = require('gulp-flatten'),
@@ -70,6 +71,7 @@ gulp.task('images', function(){
 gulp.task('js', function(){
 	gulp.src(['src/blocks/**/*.js'])
 	.pipe(concat('script.js'))
+	.pipe(uglify())
 	.pipe(gulp.dest(params.js))
 	.pipe(reload({stream: true}));
 });

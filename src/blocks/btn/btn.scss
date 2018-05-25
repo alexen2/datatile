@@ -8,6 +8,7 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	position: relative;	
+	font-family: $font-main;
 }
 .btn:hover {
 	cursor: pointer;
@@ -36,6 +37,7 @@
   color: #ffffff;  
 	margin: 0 43px;
 	line-height: 58px;
+	font-family: $font-main;
 }
 .icon+.btn__text {
   margin-left: -14px;

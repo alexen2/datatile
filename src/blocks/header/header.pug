@@ -2,7 +2,7 @@ header.header
 	div.container
 		div.header__in
 			include ../hamburger/hamburger.pug
-			+hamburger()(id="hamburger")
+			//+hamburger()(id="hamburger")
 
 			include ../logo/logo.pug
 
@@ -10,5 +10,9 @@ header.header
 				include ../menu/menu.pug
 
 			div.header__right
-				include ../btn/btn.pug
-				+btn({text: 'Support portal', type: 'link', url: 'http://support.datatile.eu'})(class="btn--xs btn--flat")
+				nav.menu
+					ul.menu__list
+						li.menu__item.hide-468
+							a.menu__link(href="https://cloud.datatile.eu") Datatile in Cloud
+						li.menu__item
+							a.menu__link(href="http://support.datatile.eu") Support portal

@@ -10,6 +10,7 @@
     "gulp-pug": "latest",
     "gulp-rename": "latest",
     "gulp-sass": "latest",
+    "gulp-uglify": "latest",
     "run-sequence": "latest"
   }
 }
