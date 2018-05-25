@@ -55,10 +55,3 @@ body {
 .text-right {
   text-align: right;
 }
-.hide-468 {
-  display: none !importent;
-
-  @media(min-width: 468px) {
-    display: block;
-  }
-}
