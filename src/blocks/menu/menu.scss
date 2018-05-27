@@ -25,3 +25,10 @@
 .menu__item--active .menu__link {
 	color: $color-black;	
 }
+.menu__item--mob-hide {
+	display: none;
+
+	@media(min-width: 768px) {
+		display: inline-block;
+	}
+}
