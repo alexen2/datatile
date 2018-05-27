@@ -3,7 +3,7 @@ div.form-request-demo(id="form-request-demo")
 		div.form-request-demo__row
 			div.form-request-demo__col-6
 				include ../input-anim/input-anim.pug
-				+input-anim({title: 'Your full name', name: 'name', type: 'text', required: true})
+				+input-anim({title: 'Your full name', name: 'name', type: 'text', req: true, required: true})
 
 			div.form-request-demo__col-6
 				include ../input-anim/input-anim.pug
@@ -12,12 +12,12 @@ div.form-request-demo(id="form-request-demo")
 		div.form-request-demo__row
 			div.form-request-demo__col-12
 				include ../input-anim/input-anim.pug
-				+input-anim({title: 'Company', name: 'company', type: 'text', required: true})
+				+input-anim({title: 'Company', name: 'company', type: 'text', req: true, required: true})
 
 		div.form-request-demo__row
 			div.form-request-demo__col-6
 				include ../input-anim/input-anim.pug
-				+input-anim({title: 'Your email address', name: 'email', type: 'text', required: true})
+				+input-anim({title: 'Your email address', name: 'email', type: 'text', req: true, required: true})
 
 			div.form-request-demo__col-6
 				include ../input-anim/input-anim.pug
