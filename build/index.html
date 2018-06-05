@@ -4,12 +4,342 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Index</title>
+      <title>Home</title>
       <link href="css/style.css" rel="stylesheet"><!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
     </head>
-  <body><svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none">
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__in">
+          <!--+hamburger()(id="hamburger")--><a class="logo" href="/">
+            <svg class="icon icon__logo">
+              <use xlink:href="#icon__logo"></use>
+            </svg></a>
+          <!--div.header__menu
+          include ../menu/menu.pug
+          
+          -->
+          <div class="header__right">
+            <nav class="menu menu--right">
+              <ul class="menu__list">
+                <li class="menu__item menu__item--mob-hide"><a class="menu__link" href="https://cloud.datatile.eu">Datatile in Cloud</a></li>
+                <li class="menu__item"><a class="menu__link" href="http://support.datatile.eu">Support portal</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="home-banner">
+      <div class="container">
+        <div class="home-banner__in">
+          <div class="home-banner__left">
+            <h1 class="title-h1">Better decisions with engaging research delivery</h1>
+            <p>Small ad-hoc, syndicated studies or global brand trackers with millions of interviews are delivered in a streamlined and nice collaborative way with DATATILE.</p>
+                        <button class="btn btn--yellow modal-btn" type="button" data-target="form-request-demo"><span class="btn__text">Request live demo</span>
+                        </button>
+          </div>
+          <div class="home-banner__right">
+            <div class="home-banner__img-block swiper-wrapper">
+              <div class="home-banner__img swiper-slide"><img src="images/home-banner__crosstab.jpg" srcset="images/home-banner__crosstab@2x.jpg 2x" alt="crosstab"></div>
+              <div class="home-banner__img swiper-slide"><img src="images/home-banner__dashboard.jpg" srcset="images/home-banner__dashboard@2x.jpg 2x" alt="crosstab"></div>
+              <div class="home-banner__img swiper-slide"><img src="images/home-banner__myspace.jpg" srcset="images/home-banner__myspace@2x.jpg 2x" alt="crosstab"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home-text">
+      <div class="container">
+        <div class="home-text__in">
+          <h2 class="home-text__title">DATATILE is an online analytical platform empowering users to explore data and deliver insightful research findings.</h2>
+          <p class="home-text__text">We help our clients to enhance research capabilities from data processing to insightful delivery. DATATILE makes data exploration and analysis totally exciting by offering a one-stop shop solution that is reliable, user-friendly and fast.</p>
+        </div>
+      </div>
+    </section>
+    <div class="features-block">
+      <div class="container">
+        <ul class="features-block__list">
+          <li class="features-block__item">
+                        <div class="feature">
+                          <div class="feature__img">
+                            <svg class="icon icon__big-1">
+                              <use xlink:href="#icon__big-1"></use>
+                            </svg>
+                          </div>
+                          <div class="feature__text">
+                            <h3>Distributed data warehouse</h3><p>DATATILE is the single-source analytical online storage for all your deliveries.</p> <p>For research consumers DATATILE becomes a compelling self-service analytical portal and knowledge base.</p>
+                          </div>
+                        </div>
+          </li>
+          <li class="features-block__item">
+                        <div class="feature">
+                          <div class="feature__img">
+                            <svg class="icon icon__big-2">
+                              <use xlink:href="#icon__big-2"></use>
+                            </svg>
+                          </div>
+                          <div class="feature__text">
+                            <h3>From data processing to data management</h3><p>DATATILE comes with fully fledged data processing functionality which will make your daily work much easier and less time-consuming.</p> <p>Management of multiple responses, coding of open-ended questions, bulk operations, etc</p>
+                          </div>
+                        </div>
+          </li>
+          <li class="features-block__item">
+                        <div class="feature">
+                          <div class="feature__img">
+                            <svg class="icon icon__big-3">
+                              <use xlink:href="#icon__big-3"></use>
+                            </svg>
+                          </div>
+                          <div class="feature__text">
+                            <h3>Intuitive, visual and perfomant analysis</h3><p>More than 20 statistical metrics, arithmetical calculations, aggregations, significance tests allow to run in-depth analysis of your data.</p> <p>Instant representations on tens of chart types with indicators, conversion, etc.</p>
+                          </div>
+                        </div>
+          </li>
+          <li class="features-block__item">
+                        <div class="feature">
+                          <div class="feature__img">
+                            <svg class="icon icon__big-4">
+                              <use xlink:href="#icon__big-4"></use>
+                            </svg>
+                          </div>
+                          <div class="feature__text">
+                            <h3>Deliver through collaboration</h3><p>Streamlineed delivery of results.</p> <p>Raw data to interactive dashboards in few clicks.</p> <p>Share entities, automate PowerPoint reports.</p> <p>Engage customers in self-service analysis.</p>
+                          </div>
+                        </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="features-block2">
+      <ul class="features-block2__list">
+        <li class="features-block2__item">
+          <div class="container">
+                        <div class="feature feature--full-width">
+                          <div class="feature__img">
+                            <svg class="icon icon__big-5">
+                              <use xlink:href="#icon__big-5"></use>
+                            </svg>
+                          </div>
+                          <div class="feature__text">
+                            <h3>Custom solutions</h3><p>Security of users' data is our priority. You can manage access granularly on the level of groups of entities, databases,  dashboards, particular variables and chunks of data. Role-based functionality defines what features of the </p>
+                          </div>
+                        </div>
+          </div>
+        </li>
+        <li class="features-block2__item">
+          <div class="container">
+                        <div class="feature feature--full-width">
+                          <div class="feature__img">
+                            <svg class="icon icon__big-6">
+                              <use xlink:href="#icon__big-6"></use>
+                            </svg>
+                          </div>
+                          <div class="feature__text">
+                            <h3>Security in focus</h3><p>Security of users' data is our priority. You can manage access granularly on the level of groups of entities, databases,  dashboards, particular variables and chunks of data. Role-based functionality defines what features of the </p>
+                          </div>
+                        </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <section class="testimonials-block">
+      <div class="container">
+        <div class="testimonials-block__header">
+          <h2>Officially amazed clients</h2>
+        </div>
+        <div class="testimonials-block__body">
+          <ul class="testimonials-block__list swiper-wrapper">
+            <li class="testimonials-block__item swiper-slide">
+                            <div class="testimonial"><span class="testimonial__icon">
+                                <svg class="icon icon__quotes">
+                                  <use xlink:href="#icon__quotes"></use>
+                                </svg></span>
+                              <p class="testimonial__text">The team was responsive, helpful, and pleasant to work with. I would use them again for a future need.</p>
+                              <div class="testimonial__user">
+                                <div class="testimonial__img"><img src="images/testimonial__matthias-tobies.jpg" srcset="images/testimonial__matthias-tobies@2x.jpg 2x" alt="Matthias Tobies"></div>
+                                <div class="testimonial__user-info">
+                                  <h3>Matthias Tobies</h3>
+                                  <p>Senior Research Executive at Ipsos Germany</p>
+                                </div>
+                              </div>
+                            </div>
+            </li>
+            <li class="testimonials-block__item swiper-slide">
+                            <div class="testimonial"><span class="testimonial__icon">
+                                <svg class="icon icon__quotes">
+                                  <use xlink:href="#icon__quotes"></use>
+                                </svg></span>
+                              <p class="testimonial__text">They have done a great job in helping to build a custom portal for us, with great functionality for a media optimizer. </p>
+                              <div class="testimonial__user">
+                                <div class="testimonial__img"><img src="images/testimonial__john-hallward.jpg" srcset="images/testimonial__john-hallward@2x.jpg 2x" alt="John Hallward"></div>
+                                <div class="testimonial__user-info">
+                                  <h3>John Hallward</h3>
+                                  <p>Director of Global Product Development at Ipsos Connect</p>
+                                </div>
+                              </div>
+                            </div>
+            </li>
+            <li class="testimonials-block__item swiper-slide">
+                            <div class="testimonial"><span class="testimonial__icon">
+                                <svg class="icon icon__quotes">
+                                  <use xlink:href="#icon__quotes"></use>
+                                </svg></span>
+                              <p class="testimonial__text">I used this great interactive presentation portal made by DATATILE team to demonstrate the migration…</p>
+                              <div class="testimonial__user">
+                                <div class="testimonial__img"><img src="images/testimonial__neli-esipova.jpg" srcset="images/testimonial__neli-esipova@2x.jpg 2x" alt="Neli Esipova"></div>
+                                <div class="testimonial__user-info">
+                                  <h3>Neli Esipova</h3>
+                                  <p>Senior Research Executive at Ipsos Germany</p>
+                                </div>
+                              </div>
+                            </div>
+            </li>
+          </ul>
+          <div class="testimonials-block__pag"></div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="take-control">
+        <h2>Take control of your research life</h2>
+        <p>Small ad-hoc, syndicated studies or global brand trackers with millions of interviews are delivered in a streamlined and nice collaborative way with DATATILE.</p>
+        <div class="take-control__bottom">
+                    <button class="btn modal-btn" type="button" data-target="form-request-demo"><span class="btn__text">Request live demo</span>
+                    </button>
+        </div>
+      </section>
+    </div>
+    <div class="gray">
+      <div class="container">
+        <section class="companies">
+          <h4 class="companies__title">You’ll be in good company</h4>
+          <ul class="companies__list">
+            <li class="companies__item"><img src="images/companies__ipsos.svg" alt="Ipsos"></li>
+            <li class="companies__item"><img src="images/companies__omd.svg" alt="OMD"></li>
+            <li class="companies__item"><img src="images/companies__tiburon.png" srcset="images/companies__tiburon@2x.png 2x" alt="Tiburon"></li>
+            <li class="companies__item"><img src="images/companies__fastuna.svg" alt="Fastuna"></li>
+            <li class="companies__item"><img src="images/companies__sinomonitor.png" srcset="images/companies__sinomonitor@2x.png 2x" alt="Sinomonitor"></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <div class="container">
+      <footer class="footer">
+        <div class="footer__copy"><a class="logo logo--gray" href="/">
+            <svg class="icon icon__logo--gray">
+              <use xlink:href="#icon__logo--gray"></use>
+            </svg></a>
+          <p>Copyright © 2018 Datatile Ltd.<br>All rights reserved.</p>
+          <p class="footer__sm-hide">Privacy Policy<br>Terms of Use</p>
+        </div>
+        <div class="footer__contacts footer__sm-hide">
+          <div>
+            <h5>Company</h5>
+            <p>DATATILE LTD.<br>Poseidon, 10-12<br>Olympus Village 8540<br>Paphos, Cyprus</p>
+            <p><a href="mailto:info@datatile.eu">info@datatile.eu</a></p>
+          </div>
+          <div>
+            <h5>Sales Contact Europe</h5>
+            <p>STILEFFEKT<br>Lauterbachstr. 29 <br>82538 Geretsried</p>
+            <p>+49 8171 / 9069393<br><a href="mailto:sales@datatile.eu">sales@datatile.eu</a></p>
+          </div>
+        </div>
+        <div class="footer__soc footer__sm-hide">
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item"><a href="#">
+                  <svg class="icon icon__soc-in">
+                    <use xlink:href="#icon__soc-in"></use>
+                  </svg></a></li>
+              <li class="social__item"><a href="#">
+                  <svg class="icon icon__soc-tw">
+                    <use xlink:href="#icon__soc-tw"></use>
+                  </svg></a></li>
+              <li class="social__item"><a href="#">
+                  <svg class="icon icon__soc-fb">
+                    <use xlink:href="#icon__soc-fb"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal-overlay"></div>
+        <div class="modal" id="form-request-demo">
+          <div class="modal__mobile"><a class="modal__close" id="test5">
+              <svg class="icon icon__arrow">
+                <use xlink:href="#icon__arrow"></use>
+              </svg>
+              <svg class="icon icon__logo">
+                <use xlink:href="#icon__logo"></use>
+              </svg></a></div>
+          <h3 class="modal__title">Request live demo</h3>
+          <div class="form-request-demo" id="form-request-demo">
+            <form class="form-request-demo__form" action="/" method="post" novalidate>
+              <div class="form-request-demo__row">
+                <div class="form-request-demo__col-6">
+                                <fieldset class="input-anim">
+                                  <input id="name" name="name" type="text" value="" required>
+                                  <label for="name">Your full name<span class="input-anim__required">*</span>
+                                  </label><span class="input-anim__error-msg">Please fill in this field</span>
+                                </fieldset>
+                </div>
+                <div class="form-request-demo__col-6">
+                                <fieldset class="input-anim">
+                                  <input id="position" name="position" type="text" value="" required>
+                                  <label for="position">Your position
+                                  </label><span class="input-anim__error-msg">Please fill in this field</span>
+                                </fieldset>
+                </div>
+              </div>
+              <div class="form-request-demo__row">
+                <div class="form-request-demo__col-12">
+                                <fieldset class="input-anim">
+                                  <input id="company" name="company" type="text" value="" required>
+                                  <label for="company">Company<span class="input-anim__required">*</span>
+                                  </label><span class="input-anim__error-msg">Please fill in this field</span>
+                                </fieldset>
+                </div>
+              </div>
+              <div class="form-request-demo__row">
+                <div class="form-request-demo__col-6">
+                                <fieldset class="input-anim">
+                                  <input id="email" name="email" type="text" value="" required>
+                                  <label for="email">Your email address<span class="input-anim__required">*</span>
+                                  </label><span class="input-anim__error-msg">Please fill in this field</span>
+                                </fieldset>
+                </div>
+                <div class="form-request-demo__col-6">
+                                <fieldset class="input-anim">
+                                  <input id="phone" name="phone" type="text" value="" required>
+                                  <label for="phone">Your phone number
+                                  </label><span class="input-anim__error-msg">Please fill in this field</span>
+                                </fieldset>
+                </div>
+              </div>
+              <div class="form-request-demo__row">
+                <div class="form-request-demo__col-12">
+                                <fieldset class="textarea-anim textarea-anim--adaptive-height">
+                                  <textarea id="comments" name="comments" required></textarea>
+                                  <label for="comments">Comments</label><span class="textarea-anim__error-msg">Please fill in this field</span>
+                                </fieldset>
+                </div>
+              </div>
+              <div class="form-request-demo__row">
+                <div class="form-request-demo__col-12 text-right">
+                                <button class="btn form-request-demo__cancel modal__close" type="button"><span class="btn__text">Cancel</span>
+                                </button>
+                                <button class="btn" type="submit"><span class="btn__text">Request</span>
+                                </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div><svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none">
 	<symbol id="icon__logo" viewBox="0 0 181 20">
 		<g fill-rule="nonzero">
       <path d="M146.348.115h-3.51v19.75H157.5V16.54h-11.152zM125.394.121h3.523v19.743h-3.523zM47.92 3.529h7.811v16.336h3.535V3.503h7.168V.215H47.92zM97.315 3.529h7.812v16.336h3.533V3.503h7.168V.215H97.315zM13.911 1.908C12.241.874 10.262.357 7.687.281c0 0-2.294-.066-3.401-.066H.635v7.976h3.483V3.515H5.86c1.028 0 1.583.013 2.951.153 2.324.238 3.852 1.102 4.807 2.722.43.73.69 1.55.77 2.44.035.376.056.709.056 1.21 0 .503-.02.835-.056 1.208a5.8 5.8 0 0 1-.77 2.444c-.955 1.617-2.481 2.482-4.805 2.72-1.367.14-1.927.154-2.966.154l-1.73-.001v-4.898H.634v8.198h3.651c1.155 0 2.448-.037 3.391-.065 2.585-.076 4.564-.594 6.233-1.628 1.914-1.185 3.161-2.897 3.707-5.09a12.04 12.04 0 0 0 .368-3.041c0-1.087-.113-2.025-.368-3.042-.547-2.195-1.793-3.907-3.705-5.09zM32.963.215l-8.088 19.65h3.787l5.823-14.433 3.306 8.194h-3.306v3.038h4.531l1.292 3.2h3.786L36.006.216zM80.503.215l-8.087 19.65h3.786l5.823-14.433 3.306 8.194h-3.306v3.038h4.531l1.292 3.2h3.786L83.546.216zM169.068 16.656V3.253h11.306V.117h-14.817v19.748h14.866v-3.209z"/>

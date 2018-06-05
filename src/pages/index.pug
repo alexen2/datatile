@@ -1,9 +1,34 @@
 doctype html
 html(lang="en")
 	include include/head.pug
-	+head('Index')
+	+head('Home')
 
 	body
+		include ../blocks/header/header.pug
+
+		include ../blocks/home-banner/home-banner.pug
+
+		include ../blocks/home-text/home-text.pug
+
+		include ../blocks/features-block/features-block.pug
+
+		include ../blocks/features-block2/features-block2.pug
+
+		include ../blocks/testimonials-block/testimonials-block.pug
+
+		div.container
+			include ../blocks/take-control/take-control.pug
+
+		div.gray
+			div.container
+				include ../blocks/companies/companies.pug
+
+		div.container
+			include ../blocks/footer/footer.pug
+		
+		div.modal-overlay
+		include ../blocks/modal/modal.pug
+		+modal({block: 'form-request-demo', title: 'Request live demo'})(id="form-request-demo")
 
 		include include/svg.html
 		include include/script.pug
