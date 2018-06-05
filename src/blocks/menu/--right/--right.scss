@@ -1,0 +1,12 @@
+.menu--right .menu__link {
+	display: block;
+	line-height: 70px;
+	color: $color-red;
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.menu--right .menu__link:hover {
+	opacity: 0.7;
+}
